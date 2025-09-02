@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MegaGrow Mart Shop</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f5f5f7; }
+    header { background: #111; color: #fff; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; }
+    header h1 { margin: 0; font-size: 1.5em; }
+    .top-bar { background: #222; color: #ddd; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; }
+    .top-bar .rating { font-size: 1em; }
+    .container { display: flex; padding: 20px; }
+    .sidebar { width: 240px; padding-right: 20px; background: #fff; border-radius: 8px; }
+    .sidebar h3 { margin-top: 0; }
+    .sidebar label, .sidebar select { display: block; margin: 8px 0; }
+    .main { flex: 1; }
+    .sort-bar { margin-bottom: 15px; display: flex; align-items: center; justify-content: flex-end; }
+    .sort-bar select { padding: 5px; font-size: 0.95em; }
+    .items { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+    .item-card { background: #fff; border-radius: 8px; padding: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .item-card img { width: 100%; border-radius: 4px; }
+    .item-card h4 { margin: 10px 0 5px; font-size: 1em; }
+    .item-card p { margin: 4px 0; font-size: 0.9em; color: #555; }
+    .item-card button { margin-top: 8px; width: 100%; padding: 6px; background: #28a745; border: none; border-radius: 4px; color: white; cursor: pointer; font-size: 0.95em; }
+    .footer { background: #111; color: #ccc; padding: 15px 20px; text-align: center; }
+    .footer a { color: #888; text-decoration: none; margin: 0 10px; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MegaGrow Mart Shop</h1>
+    <div>
+      <input type="text" placeholder="Search items…" style="padding:5px; font-size:0.9em;" />
+    </div>
+  </header>
+
+  <div class="top-bar">
+    <div class="rating">
+      ⭐ 4.9 • Based on 268,409 orders
+    </div>
+  </div>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h3>Filters</h3>
+      <label><input type="checkbox" /> Pets</label>
+      <label><input type="checkbox" /> Fruits</label>
+      <label><input type="checkbox" /> Seeds</label>
+
+      <h4>Price</h4>
+      <select>
+        <option>All</option>
+        <option>$0 – $50</option>
+        <option>$50 – $150</option>
+        <option>$150 +</option>
+      </select>
+
+      <h4>Type</h4>
+      <label><input type="checkbox" /> Divine</label>
+      <label><input type="checkbox" /> Mythical</label>
+      <label><input type="checkbox" /> Rainbow</label>
+    </aside>
+
+    <main class="main">
+      <div class="sort-bar">
+        Sort by:
+        <select>
+          <option>Recommended</option>
+          <option>Price: Low → High</option>
+          <option>Price: High → Low</option>
+        </select>
+      </div>
+
+      <div class="items">
+        <!-- Sample item cards -->
+        <div class="item-card">
+          <img src="https://via.placeholder.com/200x150?text=Disco+Bee" alt="Disco Bee" />
+          <h4>Disco Bee</h4>
+          <p>Seller: GrowAGardenRBLX • 99.9%</p>
+          <p>$19.99 / unit • 20 min</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="item-card">
+          <img src="https://via.placeholder.com/200x150?text=T-Rex" alt="T-Rex" />
+          <h4>T‑Rex</h4>
+          <p>Seller: PoloShop • 99.2%</p>
+          <p>$1.38 / unit • 20 min</p>
+          <button>Buy Now</button>
+        </div>
+        <div class="item-card">
+          <img src="https://via.placeholder.com/200x150?text=Rainbow+Sack" alt="Rainbow Sack" />
+          <h4>Rainbow Sack</h4>
+          <p>Seller: Smurfstore • 99.8%</p>
+          <p>$4.90 / unit • 20 min</p>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <a href="#">Help Center</a> |
+    <a href="#">Contact</a> |
+    <a href="#">Terms</a> |
+    <a href="#">Privacy</a>
+  </footer>
+</body>
+</html>
